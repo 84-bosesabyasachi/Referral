@@ -14,9 +14,9 @@ import CreateCampaign from "./pages/CreateCampaign";
 import Promoters from "./pages/Promoters";
 import Leads from "./pages/Leads";
 import Payouts from "./pages/Payouts";
-import { Settings } from "lucide-react";
 import AIAgent from "./pages/AIAgent";
 import Help from "./pages/Help";
+import Settings from "./pages/Settings";
 
 const queryClient = new QueryClient();
 
@@ -27,7 +27,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Navigate to="/dashboard" />} />
+          <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/campaign" element={<Campaign />} />
           <Route path="/campaign/create" element={<CreateCampaign />} />
