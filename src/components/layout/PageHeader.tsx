@@ -1,3 +1,4 @@
+import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar';
 import { ReactNode } from 'react';
 
 interface PageHeaderProps {
@@ -16,9 +17,10 @@ export default function PageHeader({ title, children }: PageHeaderProps) {
           </svg>
         </button>
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-sm text-gray-600 font-medium">
-            KS
-          </div>
+          <Avatar className="w-8 h-8">
+            <AvatarImage src="https://github.com/shadcn.png" className='rounded-full' />
+            <AvatarFallback>KS</AvatarFallback>
+          </Avatar>
           <div className="text-xs text-gray-500">
             kadintstanton@gmail.com
           </div>
