@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 9d7fe3185d264aec0040cfbb271fd38314bb0070
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -38,13 +34,9 @@ const Login = () => {
           <Button
             variant="outline"
             className="w-full mb-6 gap-2"
-<<<<<<< HEAD
             onClick={() => {
               /* Handle Google/Microsoft login */
             }}
-=======
-            onClick={() => {/* Handle Google/Microsoft login */}}
->>>>>>> 9d7fe3185d264aec0040cfbb271fd38314bb0070
           >
             <img
               src="https://www.svgrepo.com/show/475656/google-color.svg"
@@ -66,14 +58,10 @@ const Login = () => {
                   className="w-full"
                 />
               </div>
-<<<<<<< HEAD
               <Button
                 type="submit"
                 className="w-full bg-[#4F46E5] hover:bg-[#4338CA]"
               >
-=======
-              <Button type="submit" className="w-full bg-[#4F46E5] hover:bg-[#4338CA]">
->>>>>>> 9d7fe3185d264aec0040cfbb271fd38314bb0070
                 Send Magic Link
               </Button>
             </form>
@@ -103,14 +91,10 @@ const Login = () => {
               <div className="space-y-2">
                 <div className="flex justify-between">
                   <Label htmlFor="password">Password</Label>
-<<<<<<< HEAD
                   <Link
                     to="/forgot-password"
                     className="text-[#4F46E5] text-sm hover:underline"
                   >
-=======
-                  <Link to="/forgot-password" className="text-[#4F46E5] text-sm hover:underline">
->>>>>>> 9d7fe3185d264aec0040cfbb271fd38314bb0070
                     Forgot password?
                   </Link>
                 </div>
@@ -135,7 +119,6 @@ const Login = () => {
 
               <div className="flex items-center space-x-2">
                 <Checkbox id="remember" />
-<<<<<<< HEAD
                 <Label htmlFor="remember" className="text-sm">
                   Remember Me
                 </Label>
@@ -145,13 +128,7 @@ const Login = () => {
                 type="submit"
                 className="w-full bg-[#4F46E5] hover:bg-[#4338CA]"
               >
-=======
-                <Label htmlFor="remember" className="text-sm">Remember Me</Label>
-              </div>
-
-              <Button type="submit" className="w-full bg-[#4F46E5] hover:bg-[#4338CA]">
->>>>>>> 9d7fe3185d264aec0040cfbb271fd38314bb0070
-                Login
+                <Link to="/dashboard">Login</Link>
               </Button>
             </form>
 

@@ -8,7 +8,6 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import PlatformSetup from "./pages/PlatformSetup";
-<<<<<<< HEAD
 import Dashboard from "./pages/Dashboard";
 import Campaign from "./pages/Campaign";
 import CreateCampaign from "./pages/CreateCampaign";
@@ -18,8 +17,6 @@ import Payouts from "./pages/Payouts";
 import { Settings } from "lucide-react";
 import AIAgent from "./pages/AIAgent";
 import Help from "./pages/Help";
-=======
->>>>>>> 9d7fe3185d264aec0040cfbb271fd38314bb0070
 
 const queryClient = new QueryClient();
 
@@ -30,7 +27,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={<Navigate to="/dashboard" />} />
+          <Route path="/" element={<Navigate to="/dashboard" />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/campaign" element={<Campaign />} />
           <Route path="/campaign/create" element={<CreateCampaign />} />

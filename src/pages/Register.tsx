@@ -26,7 +26,7 @@ const Register = () => {
           <h1 className="text-2xl font-semibold text-center mb-8">
             Register for ReferralHub
           </h1>
-          
+
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
               <Label htmlFor="email" className="text-sm text-gray-600">Email Id</Label>
@@ -86,7 +86,9 @@ const Register = () => {
             </div>
 
             <Button type="submit" className="w-full bg-[#4F46E5] hover:bg-[#4338CA] text-white py-2 rounded">
-              Register
+              <Link to="/dashboard">
+                Register
+              </Link>
             </Button>
           </form>
 

@@ -1,14 +1,14 @@
 
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
-import { 
-  BarChart3, 
-  MessageSquare, 
-  Users, 
-  UserPlus, 
-  DollarSign, 
-  Settings, 
-  HelpCircle 
+import {
+  BarChart3,
+  MessageSquare,
+  Users,
+  UserPlus,
+  DollarSign,
+  Settings,
+  HelpCircle
 } from 'lucide-react';
 
 interface SidebarLinkProps {
@@ -20,15 +20,15 @@ interface SidebarLinkProps {
 
 const SidebarLink = ({ to, icon, label, isActive }: SidebarLinkProps) => {
   return (
-    <Link 
-      to={to} 
+    <Link
+      to={to}
       className={cn(
-        "sidebar-link",
+        "sidebar-link flex gap-2 items-center my-2 mx-2",
         isActive && "active"
       )}
     >
       <span className="w-5 h-5">{icon}</span>
-      <span>{label}</span>
+      <span className='text-lg'>{label}</span>
     </Link>
   );
 };
@@ -56,8 +56,8 @@ export default function Sidebar() {
       <div className="p-4">
         <Link to="/" className="flex items-center gap-2">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 8L16 24L24 8" stroke="#2563EB" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M24 24L16 8L8 24" stroke="#2563EB" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M8 8L16 24L24 8" stroke="#2563EB" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M24 24L16 8L8 24" stroke="#2563EB" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </Link>
       </div>
